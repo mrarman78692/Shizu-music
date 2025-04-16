@@ -17,7 +17,7 @@ from AvishaRobot.utils.mongo import (
     update_karma,
 )
 
-regex_upvote =r"^(\+|\+\+|\+1|thx|thanx|thanks|🖤|❣️|💝|💖|💕|❤️|💘|cool|good|\👍|thank you|gud|thankyou|love|tnx)$"
+regex_upvote =r"^(\+|\+\+|\+1|thx|thanx|thanks|🖤|❣️|💝|💖|💕|❤️|💘|cool|good|\👍|thank you|tosu|thankyou|love|tnx)$"
 regex_downvote = r"^(\-|\-\-|\-1|\👎|💔|fuck off|gey|mf|bc|mc|)$"
 
 
@@ -26,7 +26,7 @@ karma_negative_group = 4
 
 EVAA = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/avishaxbot?startgroup=true"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/AlisaMusicRobot?startgroup=true"),
     ],
 ]
 
