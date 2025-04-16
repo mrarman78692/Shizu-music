@@ -357,7 +357,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             random.choice(NYKAA),
-            caption="⬤ ๛ᴀ ᴠ ɪ s ʜ ᴀ ࿐ ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ.\n\n⬤ ᴜᴘᴛɪᴍᴇ ➥ <code>{}</code>".format(
+            caption="⬤ ๛ᴀ ʟ ɪ s ʜ ᴀ ࿐ ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ.\n\n⬤ ᴜᴘᴛɪᴍᴇ ➥ <code>{}</code>".format(
                 uptime
             ),
             reply_markup=InlineKeyboardMarkup(roy),
@@ -503,7 +503,7 @@ def Avisha_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="avisha_back"),
-                        InlineKeyboardButton(text="ᴄᴄ ʜᴇʟᴘ", url="https://t.me/h_cc_help"),
+                        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/the_incricible"),
                     ],
                 ]
             ),
@@ -517,7 +517,7 @@ def Avisha_about_callback(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="avisha_back"),
                         InlineKeyboardButton(
-                            text="ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/roy_editx"
+                            text="ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/the_incricible"
                         ),
                     ],
                 ]
@@ -1116,7 +1116,7 @@ def donate(update: Update, context: CallbackContext):
 
         if OWNER_ID != 6922271843:
             update.effective_message.reply_text(
-                f"❅ ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {dispatcher.bot.first_name} sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs [ɢɪᴛʜᴜʙ](https://github.com/noob-mukesh/nothing?)"
+                f"❅ ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {dispatcher.bot.first_name} sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs [ɢɪᴛʜᴜʙ](https://github.com/mrtosumemon)"
                 f"\n\n❅ ʙᴜᴛ ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴅᴏɴᴀᴛᴇ ᴛᴏ ᴛʜᴇ ᴩᴇʀsᴏɴ ᴄᴜʀʀᴇɴᴛʟʏ ʀᴜɴɴɪɴɢ ᴍᴇ : [ʜᴇʀᴇ]",
                 parse_mode=ParseMode.MARKDOWN,
                 
@@ -1166,7 +1166,7 @@ def main():
                     [
                         InlineKeyboardButton(
                             text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ",
-                            url="https://t.me/avishaxbot?startgroup=true"
+                            url="https://t.me/AlisaMusicRobot?startgroup=true"
                             )
                        ]
                 ]
@@ -1185,7 +1185,7 @@ def main():
 **● ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ ➥** `{tlhver}`
 **● ᴩʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ ➥** `{pyrover}`
 
-**❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ [๛ᴀ ᴠ ɪ s ʜ ᴀ ࿐](https://t.me/roy_editx)**
+**❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ [๛ᴀ ʀ ɪ s ʜ ᴀ ࿐](https://t.me/the_incricible)**
      ━━━━━━━━ ⊱◈◈◈⊰ ━━━━━━━━
 """,reply_markup=x,
                 parse_mode=ParseMode.MARKDOWN,
