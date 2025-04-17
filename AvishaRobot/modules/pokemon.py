@@ -6,7 +6,7 @@ from pyrogram.enums import ChatAction, ParseMode
 
 EVAA = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/avishaxbot?startgroup=true"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/AlisaMusicRobot?startgroup=true"),
     ],
 ]
 
@@ -48,7 +48,7 @@ async def CutexMusic(client, message):
         await message.reply_text(f"⬤ ᴇʀʀᴏʀ ➥ {e}")
     except requests.RequestException as e:
            # ITTU SA ERROR 
-        await message.reply_text("⬤ ᴇʀʀᴏʀ ➥ @The_Friendz ♥︎")
+        await message.reply_text("⬤ ᴇʀʀᴏʀ ➥ @Zoyu_support ♥︎")
     except KeyError:
            # I THIKNK YE NHI CHIYE 
         await message.reply_text("⬤ ᴘᴏᴋᴇᴍᴏɴ ᴡᴀs ɴᴏᴛ ғᴏᴜɴᴅ.")
