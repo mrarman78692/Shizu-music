@@ -3,7 +3,7 @@ from pyrogram import Client, enums, filters, idle
 import re
 from requests import get
 import asyncio
-from MukeshRobot import pbot as mukesh
+from AvishaRobot import pbot as mukesh
 
 from pyrogram.types import InlineKeyboardButton as ikb, InlineKeyboardMarkup as ikm, Message
 from pyrogram.enums import ChatAction, ParseMode
@@ -82,7 +82,7 @@ async def unshort(bot, message):
 # mukesh.add_handler(MessageHandler(unshort))
 __help__ = """
 ᴍᴀᴋᴇ sʜᴏʀᴛs ᴏғ ᴀ ɢɪᴠᴇɴ ʟɪɴᴋ 
- ❍ /short <url>  *:Example `/short https://t.me/mr_sukkun`.
+ ❍ /short <url>  *:Example `/short https://t.me/legend_mickey`.
  *"""
 
-__mod_name__ = "Sʜᴏʀᴛᴇɴᴇʀ"
+__mod_name__ = "˹ sʜᴏʀᴛ ˼"
