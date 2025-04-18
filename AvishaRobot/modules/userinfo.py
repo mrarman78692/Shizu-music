@@ -309,10 +309,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "ʜᴇᴀʟᴛʜ", url=f"https://t.me/RoY_Editx/882"
+                                "˹ ʜᴇᴀʟᴛʜ ˼", url=f"https://t.me/The_Incricible/3141"
                             ),
                             InlineKeyboardButton(
-                                "ᴅɪsᴀsᴛᴇʀ", url="https://t.me/RoY_Editx/881"
+                                "˹ ᴅɪsᴀsᴛᴇʀ ˼", url="https://t.me/The_Incricible/3143"
                             ),
                         ],
                     ]
@@ -329,10 +329,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "ʜᴇᴀʟᴛʜ", url="https://t.me/RoY_Editx/882"
+                                "˹ ʜᴇᴀʟᴛʜ ˼", url="https://t.me/The_Incricible/3141"
                             ),
                             InlineKeyboardButton(
-                                "ᴅɪsᴀsᴛᴇʀ", url="https://t.me/RoY_Editx/881"
+                                "˹ ᴅɪsᴀsᴛᴇʀ ˼", url="https://t.me/The_Incricible/3143"
                             ),
                         ],
                     ]
@@ -534,7 +534,7 @@ dispatcher.add_handler(GET_BIO_HANDLER)
 dispatcher.add_handler(SET_ABOUT_HANDLER)
 dispatcher.add_handler(GET_ABOUT_HANDLER)
 
-__mod_name__ = "ɪɴꜰᴏ"
+__mod_name__ = "˹ ɪɴꜰᴏ ˼"
 __command_list__ = ["setbio", "bio", "setme", "me", "info"]
 __handlers__ = [
     ID_HANDLER,
