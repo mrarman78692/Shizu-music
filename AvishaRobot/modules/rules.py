@@ -161,7 +161,7 @@ __help__ = """
  ⬤ `/clearrules`* ➥* ᴄʟᴇᴀʀ ᴛʜᴇ ʀᴜʟᴇs ғᴏʀ ᴛʜɪs ᴄʜᴀᴛ.
 """
 
-__mod_name__ = "ʀᴜʟᴇs"
+__mod_name__ = "˹ ʀᴜʟᴇs ˼"
 
 GET_RULES_HANDLER = CommandHandler("rules", get_rules, run_async=True)
 SET_RULES_HANDLER = CommandHandler("setrules", set_rules, run_async=True)
