@@ -182,7 +182,7 @@ async def overall_rank(_, query):
             ]])
     await query.message.edit_text(response, reply_markup=button)
 
-__mod_name__ = "ʀᴀɴᴋɪɴɢ"
+__mod_name__ = "˹ ʀᴀɴᴋɪɴɢ ˼"
 
 __help__ = """
 ⬤ /overall *➥* ᴏᴠᴇʀᴀʟʟ ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ ᴜsᴇʀs ᴍᴇssᴀɢᴇs.
