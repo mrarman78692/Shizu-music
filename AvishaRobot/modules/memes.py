@@ -159,5 +159,5 @@ __help__ = """
 ⬤ /lolimeme ➥ ʟᴏʟɪ ᴍᴇᴍᴇs
 """
 
-__mod_name__ = "ᴍᴇᴍᴇs"
+__mod_name__ = "˹ ᴍᴇᴍᴇs ˼"
 
