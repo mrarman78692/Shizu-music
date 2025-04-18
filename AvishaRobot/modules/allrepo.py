@@ -47,7 +47,7 @@ def get_all_repository_info(github_username):
 
     return repo_info
 
-__mod_name__ = "ʀᴇᴘᴏ"
+__mod_name__ = "˹ ʀᴇᴘᴏ ˼"
 
 __help__ = """
 
