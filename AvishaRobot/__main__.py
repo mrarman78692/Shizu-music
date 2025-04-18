@@ -821,12 +821,12 @@ def Music_about_callback(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(text="ᴏᴡɴᴇʀ", callback_data="Music_roy_bot"),
                         InlineKeyboardButton(
-                            text="ᴄʜᴀᴛ-ᴀɪ",
+                            text=" ˹ᴄʜᴀᴛ-ᴀɪ ˼",
                             callback_data="donation_help",
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Main_help")
+                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Main_help")
                     ],
                 ]
             ),
@@ -866,7 +866,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=" ʙᴀᴄᴋ ", callback_data="Music_roy"),InlineKeyboardButton(text="ᴛᴏᴏʟs", callback_data="avisha_support")
+                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Music_roy"),InlineKeyboardButton(text="ᴛᴏᴏʟs", callback_data="avisha_support")
                     ]
                 ]
             ),
@@ -907,7 +907,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="ʜᴇʟᴘ",
+                                text="˹ ʜᴇʟᴘ ˼",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
@@ -928,7 +928,7 @@ def get_help(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴏᴩᴇɴ ʜᴇʀᴇ",
+                            text="⌯ ᴏᴩᴇɴ ʜᴇʀᴇ ⌯",
                             callback_data="help_back",
                         )
                     ],
