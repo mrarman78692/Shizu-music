@@ -23,7 +23,7 @@ async def nudes(_,message):
     await message.reply_photo(x.json()["content"]["url"], caption=f"❖ ɴᴜᴅᴇ ᴘɪᴄs ʙʏ ➥ ๛ᴀ ʟ ɪ s ʜ ᴀ ࿐", reply_markup=InlineKeyboardMarkup(EVAA),)
 
 
-__mod_name__ = "ɴᴜᴅᴇ"
+__mod_name__ = "˹ ɴᴜᴅᴇ ˼"
 
 __help__ = """
 
