@@ -34,7 +34,7 @@ async def wall(_, message: Message):
             f"⬤ `ᴡᴀʟʟᴘᴀᴘᴇʀ ɴᴏᴛ ғᴏᴜɴᴅ ғᴏʀ ➥ `{text}`",
         )
 
-__mod_name__ = "ᴡᴀʟʟ"
+__mod_name__ = "˹ ᴡᴀʟʟ ˼"
 
 __help__ = """
 
