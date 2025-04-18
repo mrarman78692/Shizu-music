@@ -56,7 +56,7 @@ async def CutexMusic(client, message):
 
 #####
 
-__mod_name__ = "ᴘᴏᴋᴇᴅᴇx"
+__mod_name__ = "˹ ᴘᴏᴋᴇᴅᴇx ˼"
 
 __help__ = """
 
