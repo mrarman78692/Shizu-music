@@ -65,7 +65,7 @@ async def restart(client, m: Message):
         reply_markup=InlineKeyboardMarkup(Avisha),
     )
     
-__mod_name__ = "ᴀʟɪᴠᴇ"
+__mod_name__ = "˹ ᴀʟɪᴠᴇ ˼"
 
 __help__ = """
 
