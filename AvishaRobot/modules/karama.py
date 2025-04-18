@@ -173,7 +173,7 @@ async def captcha_state(_, message):
     else:
         await message.reply_text(usage)
 
-__mod_name__ = "ᴋᴀʀᴍᴀ"
+__mod_name__ = "˹ ᴋᴀʀᴍᴀ ˼"
 
 __help__ = """
 
