@@ -133,4 +133,4 @@ __help__ = """
  ⬤ /lov <fristuser seconduser> ➥ sʜᴏᴡ ʟᴏᴠᴇ ᴘᴇʀᴄᴇɴᴛᴀɢᴇ.
 """
 
-__mod_name__ = "ᴄᴏᴜᴘʟᴇ"
+__mod_name__ = "˹ ᴄᴏᴜᴘʟᴇ ˼"
