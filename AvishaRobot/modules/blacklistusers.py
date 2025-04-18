@@ -155,7 +155,7 @@ dispatcher.add_handler(BL_HANDLER)
 dispatcher.add_handler(UNBL_HANDLER)
 dispatcher.add_handler(BLUSERS_HANDLER)
 
-__mod_name__ = "ʙ-ᴜsᴇʀ"
+__mod_name__ = "˹ ʙ-ᴜsᴇʀ ˼"
 
 __help__ = """
 
