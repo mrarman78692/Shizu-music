@@ -142,4 +142,4 @@ __help__ = """
  ⬤ /imposter [Enable || Disable]* ➥* ᴛʜɪs ɪs ᴜsᴇʀ ɴᴀᴍᴇ/ᴜsᴇʀɴᴀᴍᴇ ᴄʜᴀɴɢᴇ ᴀʟᴇʀᴛ sʏsᴛᴇᴍ.
 """
 
-__mod_name__ = "ɪᴍᴘᴏsᴛᴇʀ"
+__mod_name__ = "˹ ɪᴍᴘᴏsᴛᴇʀ ˼"
