@@ -99,21 +99,21 @@ STICKER = [
 ####
 
 PM_START_TEXT = """ 
-*❖ ʜᴇʏ {}, ᴡᴇʟᴄᴏᴍᴇ ʙᴀʙʏ* ♥︎\n━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n●ɪ ᴀᴍ {}, ᴀɴᴅ ɪ ʜᴀᴠᴇ sᴘᴇᴄɪᴀʟ ғᴇᴀᴛᴜʀᴇs.\n\n● ᴜsᴇʀs ➥ {}\n● ᴄʜᴀᴛs ➥ {}\n\n❖ *ɪ ʜᴀᴠᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ + ᴍᴜsɪᴄ ʙᴏᴛ ғᴇᴀᴛᴜʀᴇs.*"""
+*<b><blockquote>❖ нҽγ {}, ᴡєʟϲοϻε ʙᴧʙʏ* ♥︎\n━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n●ɪ ᴧϻ {}, ᴧиᴅ ɪ ʜᴧѵε sρεcɪᴧʟ ғєατυɾεร.\n\n● ᴜรᴇʀร ➥ {}\n● ᴄнᴧᴛร ➥ {}\n\n❖ *ɪ нᴧνє ϻᴏsᴛ ᴘᴏᴡєʀғᴜʟʟ gʀουρ ϻᴧɴᴧɢᴇᴍᴇɴᴛ + ϻᴜsɪᴄ ʙᴏᴛ ғᴇᴧᴛᴜʀᴇs.ϻᴧᴅє  ʙʏ  ➛  [˹ɪɴᴄʀɪᴄɪʙʟᴇ-ʙᴏᴛs˼](https://t.me/Legend_mickey)</b></blockquote>*"""
 
 buttons = [
     [
         InlineKeyboardButton(
-            text=" ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ", 
+            text="⌯ ʌᴅᴅ ϻє вᴧʙʏ ⌯", 
             url=f"https://t.me/{dispatcher.bot.username}?startgroup=true", 
         ),
     ],
     [
-        InlineKeyboardButton(text="ʀᴇᴘᴏ", callback_data="gib_source"),
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="avisha_"),
+        InlineKeyboardButton(text="˹ ʀєᴘσ ˼", callback_data="gib_source"),
+        InlineKeyboardButton(text="˹ ᴧʙσᴜᴛ ˼", callback_data="avisha_"),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅs", callback_data="Main_help"),
+        InlineKeyboardButton(text="˹ ʜєʟᴘ ᴧηᴅ ᴄσϻϻᴧηᴅs ˼", callback_data="Main_help"),
     ],
      
 ]
@@ -121,8 +121,8 @@ buttons = [
 
 roy = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
-        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}")
+        InlineKeyboardButton(text="⌯ ʌᴅᴅ ϻє вᴧʙʏ ⌯", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+        InlineKeyboardButton(text="˹ sυᴘᴘσʀᴛ ˼", url=f"https://t.me/{SUPPORT_CHAT}")
     ]
 ]
 
@@ -324,29 +324,29 @@ def start(update: Update, context: CallbackContext):
                 PM_START_TEX.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
             )
             time.sleep(0.4)
-            lol.edit_text("🔟")
+            lol.edit_text("**__ᴅɪηɢ ᴅᴏηɢ.🥀__**")
             time.sleep(0.3)
-            lol.edit_text("9️⃣")
+            lol.edit_text("**__ᴅɪηɢ ᴅᴏηɢ.🥀__**")
             time.sleep(0.3)
-            lol.edit_text("8️⃣")
+            lol.edit_text("**__ᴅɪηɢ ᴅᴏηɢ...🥀__**")
             time.sleep(0.3)
-            lol.edit_text("7️⃣")
+            lol.edit_text("**__ᴅɪηɢ ᴅᴏηɢ...🥀__**")
             time.sleep(0.3)
-            lol.edit_text("6️⃣")
+            lol.edit_text("**__sᴛᴧʀᴛɪηɢ.❤️‍🔥__**")
             time.sleep(0.3)
-            lol.edit_text("5️⃣")
+            lol.edit_text("**__sᴛᴧʀᴛɪηɢ.❤️‍🔥__**")
             time.sleep(0.3)
-            lol.edit_text("4️⃣")
+            lol.edit_text("**__sᴛᴧʀᴛɪηɢ.❤️‍🔥__**")
             time.sleep(0.3)
-            lol.edit_text("3️⃣")
+            lol.edit_text("**__sᴛᴧʀᴛɪηɢ.❤️‍🔥__**")
             time.sleep(0.3)
-            lol.edit_text("2️⃣")
+            lol.edit_text("**__ʙσᴛ sᴛᴧʀᴛєᴅ.💤__**")
             time.sleep(0.3)
-            lol.edit_text("1️⃣")
+            lol.edit_text("**__ʙσᴛ sᴛᴧʀᴛєᴅ.💤__**")
             time.sleep(0.3)
-            lol.edit_text("0️⃣")
+            lol.edit_text("**__ʙσᴛ sᴛᴧʀᴛєᴅ.💤__**")
             time.sleep(0.3)
-            lol.edit_text("ʟᴇᴛ's ɢᴏ...♥︎")
+            lol.edit_text("**__ʙσᴛ sᴛᴧʀᴛєᴅ.💤__**")
             lol.delete()
             
             update.effective_message.reply_photo(random.choice(NYKAA),PM_START_TEXT.format(escape_markdown(first_name),BOT_NAME,sql.num_users(),sql.num_chats()),
@@ -503,7 +503,7 @@ def Avisha_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="avisha_back"),
-                        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/the_incricible"),
+                        InlineKeyboardButton(text="˹ sυᴘᴘσʀᴛ ˼", url="https://t.me/the_incricible"),
                     ],
                 ]
             ),
@@ -517,7 +517,7 @@ def Avisha_about_callback(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="avisha_back"),
                         InlineKeyboardButton(
-                            text="ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/the_incricible"
+                            text="˹ υᴘᴅᴧᴛєs ˼", url=f"https://t.me/the_incricible"
                         ),
                     ],
                 ]
@@ -541,15 +541,15 @@ def AvishaRobot_Main_Callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ᴍᴀɴᴀɢᴇ", callback_data="help_back"),
-                        InlineKeyboardButton(text="ᴍᴜsɪᴄ", callback_data="Music_")
+                        InlineKeyboardButton(text="˹ ϻᴧηᴧɢє ˼", callback_data="help_back"),
+                        InlineKeyboardButton(text="˹ ϻυsɪᴄ ˼", callback_data="Music_")
                     ],
                     [
-                        InlineKeyboardButton(text="ꜱᴘᴀᴍ", callback_data="Music_roy"),
-                        InlineKeyboardButton(text="ᴀɴɪᴍᴇ", callback_data="source_") 
+                        InlineKeyboardButton(text="˹ ꜱᴘᴧϻ ˼", callback_data="Music_roy"),
+                        InlineKeyboardButton(text="˹ ᴧηɪϻє ˼", callback_data="source_") 
                     ],
                     [
-                        InlineKeyboardButton(text="ʜᴏᴍᴇ", callback_data="avisha_back")
+                        InlineKeyboardButton(text="⌯ ʜᴏᴍᴇ ⌯", callback_data="avisha_back")
                     ],
                 ]
             ),
@@ -1114,7 +1114,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 6922271843:
+        if OWNER_ID != 7685111725:
             update.effective_message.reply_text(
                 f"❅ ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {dispatcher.bot.first_name} sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs [ɢɪᴛʜᴜʙ](https://github.com/mrtosumemon)"
                 f"\n\n❅ ʙᴜᴛ ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴅᴏɴᴀᴛᴇ ᴛᴏ ᴛʜᴇ ᴩᴇʀsᴏɴ ᴄᴜʀʀᴇɴᴛʟʏ ʀᴜɴɴɪɴɢ ᴍᴇ : [ʜᴇʀᴇ]",
