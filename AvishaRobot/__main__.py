@@ -445,7 +445,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="avisha_support")]]
+                    [[InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="help_back"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="avisha_support")]]
                 ),
             )
 
@@ -502,7 +502,7 @@ def Avisha_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="avisha_back"),
+                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="avisha_back"),
                         InlineKeyboardButton(text="˹ sυᴘᴘσʀᴛ ˼", url="https://t.me/the_incricible"),
                     ],
                 ]
@@ -586,7 +586,7 @@ def AvishaRobot_Main_Callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Main_help"),InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", callback_data="avisha_support")
+                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Main_help"),InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", callback_data="avisha_support")
                     ]
                 ]
             ),
@@ -597,7 +597,7 @@ def AvishaRobot_Main_Callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Main_help"),InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", callback_data="avisha_support")
+                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Main_help"),InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", callback_data="avisha_support")
                     ]
                 ]
             ),
@@ -621,7 +621,7 @@ def AvishaRobot_Main_Callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [ 
                     [
-                        InlineKeyboardButton(text="ʜᴏᴍᴇ", callback_data="avisha_back"),InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", callback_data="Main_help")
+                        InlineKeyboardButton(text="⌯ ʜᴏᴍᴇ ⌯", callback_data="avisha_back"),InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", callback_data="Main_help")
                     ]
                 ]
             ),
@@ -645,7 +645,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
                         InlineKeyboardButton(text="ᴀɴɪᴍᴇ-ɢɪғ", callback_data="Music_roy_extra") 
                     ],
                     [
-                        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Main_help")
+                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Main_help")
                     ],
                 ]
             ),
