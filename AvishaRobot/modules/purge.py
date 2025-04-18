@@ -118,7 +118,7 @@ telethn.add_event_handler(*PURGE_HANDLER)
 telethn.add_event_handler(*DEL_HANDLER)
 telethn.add_event_handler(*SPURGE_HANDLER)
 
-__mod_name__ = "ᴘᴜʀɢᴇ"
+__mod_name__ = "˹ ᴘᴜʀɢᴇ ˼"
 
 __command_list__ = ["del", "purge","spurge"]
 
