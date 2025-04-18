@@ -33,7 +33,7 @@ async def logo(app, msg: Message):
 
 #######
 
-__mod_name__ = "ᴀ-ʟᴏɢᴏ"
+__mod_name__ = "˹ ᴀ-ʟᴏɢᴏ ˼"
 
 __help__ = """
 
