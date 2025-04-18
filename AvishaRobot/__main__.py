@@ -678,7 +678,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="ʙᴏᴛ", callback_data="Music_bot"),
+                        InlineKeyboardButton(text="˹ ʙᴏᴛ ˼", callback_data="Music_bot"),
                         InlineKeyboardButton(
                             text="˹ ᴇxᴛʀᴀ ˼",
                             callback_data="Music_extra",
@@ -789,7 +789,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Music_"),InlineKeyboardButton(text="ᴛᴏᴏʟs", callback_data="avisha_support")
+                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Music_"),InlineKeyboardButton(text="˹ ᴛᴏᴏʟs ˼", callback_data="avisha_support")
                     ]
                 ]
             ),
@@ -819,7 +819,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", callback_data="Music_roy_bot"),
+                        InlineKeyboardButton(text="˹ ❍ᴡηєʀ ˼", callback_data="Music_roy_bot"),
                         InlineKeyboardButton(
                             text="˹ ᴄʜᴀᴛ-ᴀɪ ˼",
                             callback_data="donation_help",
