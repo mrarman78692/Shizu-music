@@ -14,17 +14,17 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from MukeshRobot import DRAGONS, LOGGER, dispatcher
-from MukeshRobot.modules.connection import connected
-from MukeshRobot.modules.disable import DisableAbleCommandHandler
-from MukeshRobot.modules.helper_funcs.alternate import send_message, typing_action
-from MukeshRobot.modules.helper_funcs.chat_status import user_admin
-from MukeshRobot.modules.helper_funcs.extraction import extract_text
-from MukeshRobot.modules.helper_funcs.filters import CustomFilters
-from MukeshRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from MukeshRobot.modules.helper_funcs.misc import build_keyboard_parser
-from MukeshRobot.modules.helper_funcs.msg_types import get_filter_type
-from MukeshRobot.modules.helper_funcs.string_handling import (
+from AvishaRobot import DRAGONS, LOGGER, dispatcher
+from AvishaRobot.modules.connection import connected
+from AvishaRobot.modules.disable import DisableAbleCommandHandler
+from AvishaRobot.modules.helper_funcs.alternate import send_message, typing_action
+from AvishaRobot.modules.helper_funcs.chat_status import user_admin
+from AvishaRobot.modules.helper_funcs.extraction import extract_text
+from AvishaRobot.modules.helper_funcs.filters import CustomFilters
+from AvishaRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from AvishaRobot.modules.helper_funcs.misc import build_keyboard_parser
+from AvishaRobot.modules.helper_funcs.msg_types import get_filter_type
+from AvishaRobot.modules.helper_funcs.string_handling import (
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
