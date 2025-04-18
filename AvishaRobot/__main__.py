@@ -515,7 +515,7 @@ def Avisha_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="avisha_back"),
+                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="avisha_back"),
                         InlineKeyboardButton(
                             text="˹ υᴘᴅᴧᴛєs ˼", url=f"https://t.me/the_incricible"
                         ),
@@ -812,16 +812,16 @@ def Music_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="ꜱᴘᴀᴍ", callback_data="Music_roy_admin"
+                            text="˹ ꜱᴘᴀᴍ ˼", callback_data="Music_roy_admin"
                         ),
                         InlineKeyboardButton(
-                            text="ʀᴀɪᴅ", callback_data="Music_roy_play"
+                            text="˹ ʀᴀɪᴅ ˼", callback_data="Music_roy_play"
                         ),
                     ],
                     [
                         InlineKeyboardButton(text="ᴏᴡɴᴇʀ", callback_data="Music_roy_bot"),
                         InlineKeyboardButton(
-                            text=" ˹ᴄʜᴀᴛ-ᴀɪ ˼",
+                            text="˹ ᴄʜᴀᴛ-ᴀɪ ˼",
                             callback_data="donation_help",
                         ),
                     ],
