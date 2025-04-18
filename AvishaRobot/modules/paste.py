@@ -62,7 +62,7 @@ async def paste_func(_, message):
     
 
 
-__mod_name__ = "ᴘᴀsᴛᴇ"
+__mod_name__ = "˹ ᴘᴀsᴛᴇ ˼"
 
 __help__ = """
 
