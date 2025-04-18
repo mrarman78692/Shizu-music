@@ -87,7 +87,7 @@ dispatcher.add_handler(LEAVE_HANDLER)
 dispatcher.add_handler(GITPULL_HANDLER)
 dispatcher.add_handler(RESTART_HANDLER)
 
-__mod_name__ = "ᴏᴡɴᴇʀ"
+__mod_name__ = "˹ ᴏᴡɴᴇʀ ˼"
 
 __help__ = """
 
