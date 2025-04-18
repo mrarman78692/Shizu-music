@@ -3,22 +3,27 @@ from pyrogram import Client, enums, filters, idle
 import re
 from requests import get
 import asyncio
-from AvishaRobot import pbot as avisha
+from MukeshRobot import pbot as mukesh
 
 from pyrogram.types import InlineKeyboardButton as ikb, InlineKeyboardMarkup as ikm, Message
 from pyrogram.enums import ChatAction, ParseMode
 import pyshorteners
 shortener = pyshorteners.Shortener()
 from pyrogram.handlers import MessageHandler
-@avisha.on_message(filters.command(["short"]))
+@mukesh.on_message(filters.command(["short"]))
 async def short_urls(bot, message):
     await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
     if len(message.command) < 2:
         return await message.reply_text(
-            "**⬤ ᴇxᴀᴍᴘʟᴇ ➥** `/short [url]`")
+            "**Example:**\n\n`/short [url]`")
 #     url_pattern = re.compile(r'https?://\S+')
     link=message.command[1]
-                         
+#     link = url_pattern.findall(urls)
+
+# Check if any URLs were found
+#     if link not in urls:
+#                         return	await message.reply_text("this is not valid provide url")
+#     else:                         
     try:
 
         tiny_link = shortener.tinyurl.short(link)
@@ -30,24 +35,24 @@ async def short_urls(bot, message):
 
         shorted=[tiny_link,dagd_link,clckru_link]
         url=[
-        [ikb("ᴛɪɴʏ ᴜʀʟ",url=tiny_link)],
+        [ikb("Tiny Url",url=tiny_link)],
 
-        [ikb("ᴅᴀɢᴅ ᴜʀʟ",url=dagd_link),
+        [ikb("Dagd Url",url=dagd_link),
 
-         ikb("ᴄʟᴄᴋʀᴜ ᴜʀʟ",url=clckru_link)
+         ikb("Clckru Url",url=clckru_link)
         ]
         ]
-        await message.reply_text(f"⬤ ʜᴇʀᴇ ᴀʀᴇ ғᴇᴡ sʜᴏʀᴛᴇɴᴇᴅ ʟɪɴᴋs ⏤͟͟͞͞★ ",reply_markup=ikm(url))
+        await message.reply_text(f"Here are few shortened links :",reply_markup=ikm(url))
 
     except Exception as e:
-        await message.reply_text(f"⬤ ᴇɪᴛʜᴇʀ ᴛʜᴇ ʟɪɴᴋ ɪs ᴀʟʀᴇᴀᴅʏ sʜᴏʀᴛᴇɴᴇᴅ ᴏʀ ɪs ɪɴᴠᴀʟɪᴅ.")
+        await message.reply_text(f"Either the link is already shortened or is invalid.")
 
-@avisha.on_message(filters.command(["unshort"]))
+@mukesh.on_message(filters.command(["unshort"]))
 async def unshort(bot, message):
     await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
     if len(message.command) < 2:
         return await message.reply_text(
-            "⬤ **ᴇxᴀᴍᴘʟᴇ ➥** `/unshort [short - url]`")
+            "**Example:**\n\n`/unshort [short - url]`")
     link=message.text.split(' ')[1]
     
     try:
@@ -58,7 +63,7 @@ async def unshort(bot, message):
 
         [ikb
 
-         ("ᴠɪᴇᴡ ʟɪɴᴋ",url=x)
+         ("View Link",url=x)
 
         ]
 
@@ -66,17 +71,18 @@ async def unshort(bot, message):
 
         
 
-        await message.reply_text(f"⬤ ʜᴇʀᴇ's ᴛʜᴇ ᴜɴsʜᴏʀᴛᴇɴᴇᴅ ʟɪɴᴋ ⏤͟͟͞͞★\n\n➥ `{x}` " ,reply_markup=ikm(url))
+        await message.reply_text(f"Here's the unshortened link :\n`{x}` " ,reply_markup=ikm(url))
 
         
 
     except Exception as e:
 
-        await message.reply_text(f"⬤ ᴇʀʀᴏʀ ➥ {e} ")
-
+        await message.reply_text(f"ᴇʀʀᴏʀ:    {e} ")
+# mukesh.add_handler(MessageHandler(short_urls))
+# mukesh.add_handler(MessageHandler(unshort))
 __help__ = """
- 
- ⬤ /short <url> ➥ `/short https://t.me/roy_editx`.
+ᴍᴀᴋᴇ sʜᴏʀᴛs ᴏғ ᴀ ɢɪᴠᴇɴ ʟɪɴᴋ 
+ ❍ /short <url>  *:Example `/short https://t.me/mr_sukkun`.
  *"""
 
-__mod_name__ = "sʜᴏʀᴛ"
+__mod_name__ = "Sʜᴏʀᴛᴇɴᴇʀ"
