@@ -257,7 +257,7 @@ dispatcher.add_handler(DECIDE_HANDLER)
 dispatcher.add_handler(EIGHTBALL_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
 
-__mod_name__ = "ғᴜɴ"
+__mod_name__ = "˹ ғᴜɴ ˼"
 
 __command_list__ = [
     "runs",
