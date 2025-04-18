@@ -569,7 +569,7 @@ __help__ = """
  ⬤ /locks *➥* ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ʟɪsᴛ ᴏғ ʟᴏᴄᴋs ɪɴ ᴛʜɪs ᴄʜᴀᴛ.
  """
 
-__mod_name__ = "ʟᴏᴄᴋs"
+__mod_name__ = "˹ ʟᴏᴄᴋs ˼"
 
 LOCKTYPES_HANDLER = DisableAbleCommandHandler("locktypes", locktypes, run_async=True)
 LOCK_HANDLER = CommandHandler(
