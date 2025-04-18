@@ -136,6 +136,6 @@ __help__ = """
 ⬤ @AvishaxBot [@username] || [id] ʏᴏᴜʀ ᴍᴇssᴀɢᴇ
 """
 
-__mod_name__ = "ᴡʜɪsᴘᴇʀ"
+__mod_name__ = "˹ ᴡʜɪsᴘᴇʀ ˼"
 
 
