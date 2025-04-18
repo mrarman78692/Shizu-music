@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 EVAA = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/nykaaxbot?startgroup=true"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/AlisaMusicRobot?startgroup=true"),
     ],
 ]
 
@@ -32,5 +32,5 @@ __help__ = """
  ⬤ /day ➥ sʜᴏᴡ ᴅᴀʏ, [● ᴇx ➣ 16/06/2003]
 """
 
-__mod_name__ = "ᴡᴇᴀᴛʜᴇʀ"
+__mod_name__ = "˹ ᴡᴇᴀᴛʜᴇʀ ˼"
 
