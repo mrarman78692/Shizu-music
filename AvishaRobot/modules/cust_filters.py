@@ -30,7 +30,7 @@ from AvishaRobot.modules.helper_funcs.string_handling import (
     markdown_to_html,
     split_quotes,
 )
-from MukeshRobot.modules.sql import cust_filters_sql as sql
+from  AvishaRobot.modules.sql import cust_filters_sql as sql
 
 HANDLER_GROUP = 10
 
