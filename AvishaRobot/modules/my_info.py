@@ -76,7 +76,7 @@ async def callback_query_handler(event):
         await event.reply(f"{e}")
         
         
-__mod_name__ = "ᴍʏ-ɪɴғᴏ"
+__mod_name__ = "˹ᴍʏɪɴғᴏ˼"
 
 __help__ = """
 
