@@ -27,8 +27,8 @@ from telegram.ext.dispatcher import DispatcherHandlerStop
 from telegram.utils.helpers import escape_markdown
 from telethon import __version__ as tlhver
 
-import AnshiRobot.modules.no_sql.users_db as sql
-from AnshiRobot import (
+import AvishaRobot.modules.no_sql.users_db as sql
+from AvishaRobot import (
     BOT_NAME,
     BOT_USERNAME,
     LOGGER,
@@ -42,9 +42,9 @@ from AnshiRobot import (
     telethn,
     updater,
 )
-from AnshiRobot.modules import ALL_MODULES
-from AnshiRobot.modules.helper_funcs.chat_status import is_user_admin
-from AnshiRobot.modules.helper_funcs.misc import paginate_modules
+from AvishaRobot.modules import ALL_MODULES
+from AvishaRobot.modules.helper_funcs.chat_status import is_user_admin
+from AvishaRobot.modules.helper_funcs.misc import paginate_modules
 
 
 def get_readable_time(seconds: int) -> str:
@@ -110,7 +110,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="˹ ʀєᴘσ ˼", callback_data="gib_source"),
-        InlineKeyboardButton(text="˹ ᴧʙσᴜᴛ ˼", callback_data="Anshi_"),
+        InlineKeyboardButton(text="˹ ᴧʙσᴜᴛ ˼", callback_data="avisha_"),
     ],
     [
         InlineKeyboardButton(text="˹ ʜєʟᴘ ᴧηᴅ ᴄσϻϻᴧηᴅs ˼", callback_data="Main_help"),
@@ -129,32 +129,98 @@ roy = [
 HELP_STRINGS = f"""
 ❖ *{BOT_NAME} ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴀʙᴏᴜᴛ sᴘᴇᴄɪғɪᴄs ᴄᴏᴍᴍᴀɴᴅ.*"""
 
-ANAND = [
-"https://files.catbox.moe/uhqrp0.jpg",
-"https://files.catbox.moe/bmthj5.jpg",
-"https://files.catbox.moe/ymrjwv.jpg",
-"https://files.catbox.moe/8lhzsh.jpg",
-"https://files.catbox.moe/8ic7jp.jpg",
-"https://files.catbox.moe/n9mfxn.jpg",
-"https://files.catbox.moe/mkce3g.jpg",
-"https://files.catbox.moe/csgj9h.jpg",
-"https://files.catbox.moe/hxhzt3.jpg",
+ABHI = [
+"https://graph.org/file/f76fd86d1936d45a63c64.jpg",
+"https://graph.org/file/69ba894371860cd22d92e.jpg",
+"https://graph.org/file/67fde88d8c3aa8327d363.jpg",
+"https://graph.org/file/3a400f1f32fc381913061.jpg",
+"https://graph.org/file/a0893f3a1e6777f6de821.jpg",
+"https://graph.org/file/5a285fc0124657c7b7a0b.jpg",
+"https://graph.org/file/25e215c4602b241b66829.jpg",
+"https://graph.org/file/a13e9733afdad69720d67.jpg",
+"https://graph.org/file/692e89f8fe20554e7a139.jpg",
+"https://graph.org/file/db277a7810a3f65d92f22.jpg",
+"https://graph.org/file/a00f89c5aa75735896e0f.jpg",
+"https://graph.org/file/f86b71018196c5cfe7344.jpg",
+"https://graph.org/file/a3db9af88f25bb1b99325.jpg",
+"https://graph.org/file/5b344a55f3d5199b63fa5.jpg",
+"https://graph.org/file/84de4b440300297a8ecb3.jpg",
+"https://graph.org/file/84e84ff778b045879d24f.jpg",
+"https://graph.org/file/a4a8f0e5c0e6b18249ffc.jpg",
+"https://graph.org/file/ed92cada78099c9c3a4f7.jpg",
+"https://graph.org/file/d6360613d0fa7a9d2f90b.jpg",
+"https://graph.org/file/37248e7bdff70c662a702.jpg",
+"https://graph.org/file/0bfe29d15e918917d1305.jpg",
+"https://graph.org/file/16b1a2828cc507f8048bd.jpg",
+"https://graph.org/file/e6b01f23f2871e128dad8.jpg",
+"https://graph.org/file/cacbdddee77784d9ed2b7.jpg",
+"https://graph.org/file/ddc5d6ec1c33276507b19.jpg",
+"https://graph.org/file/39d7277189360d2c85b62.jpg",
+"https://graph.org/file/5846b9214eaf12c3ed100.jpg",
+"https://graph.org/file/ad4f9beb4d526e6615e18.jpg",
+"https://graph.org/file/3514efaabe774e4f181f2.jpg",   
+"https://graph.org/file/eaa3a2602e43844a488a5.jpg",
+"https://graph.org/file/b129e98b6e5c4db81c15f.jpg",
+"https://graph.org/file/3ccb86d7d62e8ee0a2e8b.jpg",
+"https://graph.org/file/df11d8257613418142063.jpg",
+"https://graph.org/file/9e23720fedc47259b6195.jpg",
+"https://graph.org/file/826485f2d7db6f09db8ed.jpg",
+"https://graph.org/file/ff3ad786da825b5205691.jpg",
+"https://graph.org/file/52713c9fe9253ae668f13.jpg",
+"https://graph.org/file/8f8516c86677a8c91bfb1.jpg",
+"https://graph.org/file/6603c3740378d3f7187da.jpg",
+"https://graph.org/file/66cb6ec40eea5c4670118.jpg",
+"https://graph.org/file/2e3cf4327b169b981055e.jpg",    
+
 ]
 
-ANSI = [
-"https://files.catbox.moe/uhqrp0.jpg",
-"https://files.catbox.moe/bmthj5.jpg",
-"https://files.catbox.moe/ymrjwv.jpg",
-"https://files.catbox.moe/8lhzsh.jpg",
-"https://files.catbox.moe/8ic7jp.jpg",
-"https://files.catbox.moe/n9mfxn.jpg",
-"https://files.catbox.moe/mkce3g.jpg",
-"https://files.catbox.moe/csgj9h.jpg",
-"https://files.catbox.moe/hxhzt3.jpg",
+NYKAA = [
+    "https://graph.org/file/9bba2b7ee9ba3806de65d.jpg",
+    "https://graph.org/file/ef82f289043a4fa74f8ff.jpg",
+    "https://graph.org/file/9c27c68958e06ae074c38.jpg",
+    "https://graph.org/file/0ff325b1d2efe80299aa3.jpg",
+    "https://graph.org/file/41167b953cf3579853d47.jpg",
+    "https://graph.org/file/bd93ab42e69305f274028.jpg",
+    "https://graph.org/file/97575db5586c05d6b2898.jpg",
+    "https://graph.org/file/07c393fdf931a407c9bc0.jpg",
+    "https://graph.org/file/f332767490ad3a5ca20e8.jpg",
+    "https://graph.org/file/f3449e9069667f647d14e.jpg",
+    "https://graph.org/file/9f51cdc739f907cbd2c7e.jpg",
+    "https://telegra.ph/file/d7a6a923c38e051ce35f3.jpg",
+    "https://graph.org/file/f86b71018196c5cfe7344.jpg",
+    "https://graph.org/file/a3db9af88f25bb1b99325.jpg",
+    "https://graph.org/file/5b344a55f3d5199b63fa5.jpg",
+    "https://graph.org/file/84de4b440300297a8ecb3.jpg",
+    "https://graph.org/file/84e84ff778b045879d24f.jpg",
+    "https://graph.org/file/a4a8f0e5c0e6b18249ffc.jpg",
+    "https://graph.org/file/ed92cada78099c9c3a4f7.jpg",
+    "https://graph.org/file/d6360613d0fa7a9d2f90b.jpg",
+    "https://graph.org/file/37248e7bdff70c662a702.jpg",
+    "https://graph.org/file/0bfe29d15e918917d1305.jpg",
+    "https://graph.org/file/16b1a2828cc507f8048bd.jpg",
+    "https://graph.org/file/e6b01f23f2871e128dad8.jpg",
+    "https://graph.org/file/cacbdddee77784d9ed2b7.jpg",
+    "https://graph.org/file/ddc5d6ec1c33276507b19.jpg",
+    "https://graph.org/file/39d7277189360d2c85b62.jpg",
+    "https://graph.org/file/5846b9214eaf12c3ed100.jpg",
+    "https://graph.org/file/ad4f9beb4d526e6615e18.jpg",
+    "https://graph.org/file/3514efaabe774e4f181f2.jpg",  
+    "https://graph.org/file/eaa3a2602e43844a488a5.jpg",
+"https://graph.org/file/b129e98b6e5c4db81c15f.jpg",
+"https://graph.org/file/3ccb86d7d62e8ee0a2e8b.jpg",
+"https://graph.org/file/df11d8257613418142063.jpg",
+"https://graph.org/file/9e23720fedc47259b6195.jpg",
+"https://graph.org/file/826485f2d7db6f09db8ed.jpg",
+"https://graph.org/file/ff3ad786da825b5205691.jpg",
+"https://graph.org/file/52713c9fe9253ae668f13.jpg",
+"https://graph.org/file/8f8516c86677a8c91bfb1.jpg",
+"https://graph.org/file/6603c3740378d3f7187da.jpg",
+"https://graph.org/file/66cb6ec40eea5c4670118.jpg",
+"https://graph.org/file/2e3cf4327b169b981055e.jpg",
 ]
 
 
-DONATE_STRING = f"""❅ ʜᴇʏ ʙᴀʙʏ, ʜᴀᴩᴩʏ ᴛᴏ ʜᴇᴀʀ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴɴᴀ ᴅᴏɴᴀᴛᴇ. ʏᴏᴜ ᴄᴀɴ ᴅɪʀᴇᴄᴛʟʏ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ @legend_mickey ғᴏʀ ᴅᴏɴᴀᴛɪɴɢ ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴠɪsɪᴛ ᴍʏ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ @Unique_society ᴀɴᴅ ᴀsᴋ ᴛʜᴇʀᴇ ᴀʙᴏᴜᴛ ᴅᴏɴᴀᴛɪᴏɴ."""
+DONATE_STRING = f"""❅ ʜᴇʏ ʙᴀʙʏ, ʜᴀᴩᴩʏ ᴛᴏ ʜᴇᴀʀ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴɴᴀ ᴅᴏɴᴀᴛᴇ. ʏᴏᴜ ᴄᴀɴ ᴅɪʀᴇᴄᴛʟʏ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ @legend_mickey ғᴏʀ ᴅᴏɴᴀᴛɪɴɢ ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴠɪsɪᴛ ᴍʏ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ @the_Incricible ᴀɴᴅ ᴀsᴋ ᴛʜᴇʀᴇ ᴀʙᴏᴜᴛ ᴅᴏɴᴀᴛɪᴏɴ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -167,7 +233,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("AnshiRobot.modules." + module_name)
+    imported_module = importlib.import_module("AvishaRobot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -257,37 +323,41 @@ def start(update: Update, context: CallbackContext):
             lol = update.effective_message.reply_text(
                 PM_START_TEX.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
             )
-            time.sleep(0.1)
-            lol.edit_text("L")
-            time.sleep(0.1)
-            lol.edit_text("Le")
-            time.sleep(0.1)
-            lol.edit_text("Leg")
-            time.sleep(0.1)
-            lol.edit_text("Lege")
-            time.sleep(0.1)
-            lol.edit_text("Legen")
-            time.sleep(0.1)
-            lol.edit_text("Legend")
-            time.sleep(0.1)
-            lol.edit_text("LegendX")
-            time.sleep(0.1)
-            lol.edit_text("LegendXAn")
-            time.sleep(0.1)
-            lol.edit_text("LegendXAndy")
-            time.sleep(0.1)
+            time.sleep(0.4)
+            lol.edit_text("❤️")
+            time.sleep(0.3)
+            lol.edit_text("🧡")
+            time.sleep(0.3)
+            lol.edit_text("💛")
+            time.sleep(0.3)
+            lol.edit_text("💚")
+            time.sleep(0.3)
+            lol.edit_text("🩵")
+            time.sleep(0.3)
+            lol.edit_text("💙")
+            time.sleep(0.3)
+            lol.edit_text("💜")
+            time.sleep(0.3)
+            lol.edit_text("🤎")
+            time.sleep(0.3)
+            lol.edit_text("🖤")
+            time.sleep(0.3)
+            lol.edit_text("🩶")
+            time.sleep(0.3)
+            lol.edit_text("🩷")
+            time.sleep(0.3)
             lol.edit_text("ʟᴇᴛ's ɢᴏ...♥︎")
             lol.delete()
             
-            update.effective_message.reply_photo(random.choice(ANSI),PM_START_TEXT.format(escape_markdown(first_name),BOT_NAME,sql.num_users(),sql.num_chats()),
+            update.effective_message.reply_photo(random.choice(NYKAA),PM_START_TEXT.format(escape_markdown(first_name),BOT_NAME,sql.num_users(),sql.num_chats()),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
             )
     else:
         update.effective_message.reply_photo(
-            random.choice(ANSI),
-            caption="⬤ @AnshiRobot ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ.\n\n⬤ ᴜᴘᴛɪᴍᴇ ➥ <code>{}</code>".format(
+            random.choice(NYKAA),
+            caption="⬤ ๛ᴀ ʟ ɪ s ʜ ᴀ ࿐ ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ.\n\n⬤ ᴜᴘᴛɪᴍᴇ ➥ <code>{}</code>".format(
                 uptime
             ),
             reply_markup=InlineKeyboardMarkup(roy),
@@ -375,7 +445,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="help_back"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="Anshi_support")]]
+                    [[InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="help_back"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="avisha_support")]]
                 ),
             )
 
@@ -413,9 +483,9 @@ def help_button(update, context):
         pass
 
 
-def Anshi_about_callback(update: Update, context: CallbackContext):
+def Avisha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
-    if query.data == "Anshi_":
+    if query.data == "avisha_":
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_caption(f"*❖ ɪ ʜᴀᴠᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ + ᴍᴜsɪᴄ ʙᴏᴛ ғᴇᴀᴛᴜʀᴇs.*"
             "\n\n● ᴡʀɪᴛᴛᴇɴ ɪɴ ᴩʏᴛʜᴏɴ ᴡɪᴛʜ sǫʟᴀʟᴄʜᴇᴍʏ ᴀɴᴅ ᴍᴏɴɢᴏᴅʙ ᴀs ᴅᴀᴛᴀʙᴀsᴇ."
@@ -432,35 +502,35 @@ def Anshi_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Anshi_back"),
-                        InlineKeyboardButton(text="˹ sυᴘᴘσʀᴛ ˼", url="https://t.me/Unique_society"),
+                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="avisha_back"),
+                        InlineKeyboardButton(text="˹ sυᴘᴘσʀᴛ ˼", url="https://t.me/the_incricible"),
                     ],
                 ]
             ),
             )
-    elif query.data == "Anshi_support":
+    elif query.data == "avisha_support":
         query.message.edit_caption("**❖ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ɢɪᴠᴇɴ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴊᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ғᴏʀ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ.**"
             f"\n\n● ɪғ ᴀɴʏ ʙᴜɢ ɪɴ {dispatcher.bot.first_name}, ᴩʟᴇᴀsᴇ ʀᴇᴩᴏʀᴛ ɪᴛ ᴀᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Anshi_back"),
+                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="avisha_back"),
                         InlineKeyboardButton(
-                            text="˹ υᴘᴅᴧᴛєs ˼", url=f"https://t.me/Unique_society"
+                            text="˹ υᴘᴅᴧᴛєs ˼", url=f"https://t.me/the_incricible"
                         ),
                     ],
                 ]
             ),
         )
-    elif query.data == "Anshi_back":
+    elif query.data == "avisha_back":
         first_name = update.effective_user.first_name 
         query.message.edit_caption(PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME,sql.num_users(),sql.num_chats()),
             reply_markup=InlineKeyboardMarkup(buttons),
             parse_mode=ParseMode.MARKDOWN,
             timeout=60,
         )
-def AnshiRobot_Main_Callback(update: Update, context: CallbackContext):
+def AvishaRobot_Main_Callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "Main_help":
         query.message.edit_caption(f"""
@@ -475,7 +545,11 @@ def AnshiRobot_Main_Callback(update: Update, context: CallbackContext):
                         InlineKeyboardButton(text="˹ ϻυsɪᴄ ˼", callback_data="Music_")
                     ],
                     [
-                        InlineKeyboardButton(text="⌯ ʜᴏᴍᴇ ⌯", callback_data="Anshi_back")
+                        InlineKeyboardButton(text="˹ ꜱᴘᴧϻ ˼", callback_data="Music_roy"),
+                        InlineKeyboardButton(text="˹ ᴧηɪϻє ˼", callback_data="source_") 
+                    ],
+                    [
+                        InlineKeyboardButton(text="⌯ ʜᴏᴍᴇ ⌯", callback_data="avisha_back")
                     ],
                 ]
             ),
@@ -486,12 +560,12 @@ def AnshiRobot_Main_Callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Main_help"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="Anshi_support")
+                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Main_help"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="avisha_support")
                     ]
                 ]
             ),
             )
-    elif query.data=="Anshi_back":
+    elif query.data=="avisha_back":
         query.message.edit_caption("""✿ ᴇxᴘᴇʀᴛ ᴄᴏᴍᴍᴀɴᴅs ✿
 
 ❅ ᴀᴠᴀɪʟᴀʙʟᴇ ᴛᴏ ᴀᴅᴍɪɴs ❅
@@ -512,7 +586,7 @@ def AnshiRobot_Main_Callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Main_help"),InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", callback_data="Anshi_support")
+                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Main_help"),InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", callback_data="avisha_support")
                     ]
                 ]
             ),
@@ -523,7 +597,7 @@ def AnshiRobot_Main_Callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Main_help"),InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", callback_data="Anshi_support")
+                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Main_help"),InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", callback_data="avisha_support")
                     ]
                 ]
             ),
@@ -536,7 +610,7 @@ def AnshiRobot_Main_Callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Main_help"),InlineKeyboardButton(text="ᴇxᴛʀᴀ", callback_data="Anshi_support")
+                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Main_help"),InlineKeyboardButton(text="ᴇxᴛʀᴀ", callback_data="avisha_support")
                     ]
                 ]
             ),
@@ -547,7 +621,7 @@ def AnshiRobot_Main_Callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [ 
                     [
-                        InlineKeyboardButton(text="⌯ ʜᴏᴍᴇ ⌯", callback_data="Anshi_back"),InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", callback_data="Main_help")
+                        InlineKeyboardButton(text="⌯ ʜᴏᴍᴇ ⌯", callback_data="avisha_back"),InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", callback_data="Main_help")
                     ]
                 ]
             ),
@@ -638,7 +712,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Music_"),InlineKeyboardButton(text="ᴛᴏᴏʟs", callback_data="Anshi_support")
+                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Music_"),InlineKeyboardButton(text="ᴛᴏᴏʟs", callback_data="avisha_support")
                     ]
                 ]
             ),
@@ -663,7 +737,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Music_"),InlineKeyboardButton(text="ᴇxᴛʀᴀ", callback_data="Anshi_support")
+                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Music_"),InlineKeyboardButton(text="ᴇxᴛʀᴀ", callback_data="avisha_support")
                     ]
                 ]
             ),
@@ -691,7 +765,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Music_"),InlineKeyboardButton(text="ᴛᴏᴏʟs", callback_data="Anshi_support")
+                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Music_"),InlineKeyboardButton(text="ᴛᴏᴏʟs", callback_data="avisha_support")
                     ]
                 ]
             ),
@@ -715,7 +789,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Music_"),InlineKeyboardButton(text="˹ ᴛᴏᴏʟs ˼", callback_data="Anshi_support")
+                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Music_"),InlineKeyboardButton(text="˹ ᴛᴏᴏʟs ˼", callback_data="avisha_support")
                     ]
                 ]
             ),
@@ -765,7 +839,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Music_roy"),InlineKeyboardButton(text="ᴛᴏᴏʟs", callback_data="Anshi_support")
+                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Music_roy"),InlineKeyboardButton(text="ᴛᴏᴏʟs", callback_data="avisha_support")
                     ]
                 ]
             ),
@@ -778,7 +852,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Music_roy"),InlineKeyboardButton(text="˹ ᴇxᴛʀᴀ ˼", callback_data="Anshi_support")
+                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Music_roy"),InlineKeyboardButton(text="˹ ᴇxᴛʀᴀ ˼", callback_data="avisha_support")
                     ]
                 ]
             ),
@@ -792,7 +866,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Music_roy"),InlineKeyboardButton(text="ᴛᴏᴏʟs", callback_data="Anshi_support")
+                        InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="Music_roy"),InlineKeyboardButton(text="ᴛᴏᴏʟs", callback_data="avisha_support")
                     ]
                 ]
             ),
@@ -827,7 +901,7 @@ def get_help(update: Update, context: CallbackContext):
     if chat.type != chat.PRIVATE:
         if len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
             module = args[1].lower()
-            update.effective_message.reply_photo(random.choice(ANAND),
+            update.effective_message.reply_photo(random.choice(ABHI),
                 f"❖ ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ɪɴ ᴘᴍ ᴛᴏ ɢᴇᴛ ʜᴇʟᴘ ᴏғ {module.capitalize()}",
                 reply_markup=InlineKeyboardMarkup(
                     [
@@ -843,7 +917,7 @@ def get_help(update: Update, context: CallbackContext):
                 ),
             )
             return
-        update.effective_message.reply_photo(random.choice(ANSI),"❖ ᴡʜᴇʀᴇ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴏᴘᴇɴ ᴛʜᴇ sᴇᴛᴛɪɴɢs ᴍᴇɴᴜ?.",
+        update.effective_message.reply_photo(random.choice(NYKAA),"❖ ᴡʜᴇʀᴇ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴏᴘᴇɴ ᴛʜᴇ sᴇᴛᴛɪɴɢs ᴍᴇɴᴜ?.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -875,7 +949,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="help_back"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="Anshi_support")]]
+                [[InlineKeyboardButton(text="⌯ ʙᴀᴄᴋ ⌯", callback_data="help_back"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="avisha_support")]]
             ),
         )
 
@@ -1010,7 +1084,7 @@ def get_settings(update: Update, context: CallbackContext):
     if chat.type != chat.PRIVATE:
         if is_user_admin(chat, user.id):
             text = "⬤ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ɢᴇᴛ ᴛʜɪs ᴄʜᴀᴛ's sᴇᴛᴛɪɴɢs ᴀs ᴡᴇʟʟ ᴀs ʏᴏᴜʀs"
-            msg.reply_photo(random.choice(ANAND),text,
+            msg.reply_photo(random.choice(ABHI),text,
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -1092,7 +1166,7 @@ def main():
                     [
                         InlineKeyboardButton(
                             text="⌯ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ⌯",
-                            url="https://t.me/AnshiRobot?startgroup=true"
+                            url="https://t.me/AlisaMusicRobot?startgroup=true"
                             )
                        ]
                 ]
@@ -1111,7 +1185,7 @@ def main():
 **● ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ ➥** `{tlhver}`
 **● ᴩʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ ➥** `{pyrover}`
 
-**❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ [๛ᴀ ɴ ꜱ ʜ ɪ࿐](https://t.me/KINGxANAND)**
+**❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ [๛ᴀ ʀ ɪ s ʜ ᴀ ࿐](https://t.me/the_incricible)**
      ━━━━━━━━ ⊱◈◈◈⊰ ━━━━━━━━
 """,reply_markup=x,
                 parse_mode=ParseMode.MARKDOWN,
@@ -1135,7 +1209,7 @@ def main():
     )
 
     about_callback_handler = CallbackQueryHandler(
-        Anshi_about_callback, pattern=r"Anshi_", run_async=True
+        Avisha_about_callback, pattern=r"avisha_", run_async=True
     )
     source_callback_handler = CallbackQueryHandler(
         Source_about_callback, pattern=r"source_", run_async=True
@@ -1143,8 +1217,8 @@ def main():
     music_callback_handler = CallbackQueryHandler(
         Music_about_callback, pattern=r"Music_",run_async=True
     )
-    Anshirobot_main_handler = CallbackQueryHandler(
-        AnshiRobot_Main_Callback, pattern=r".*_help",run_async=True)
+    avisharobot_main_handler = CallbackQueryHandler(
+        AvishaRobot_Main_Callback, pattern=r".*_help",run_async=True)
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
     dispatcher.add_handler(start_handler)
@@ -1156,7 +1230,7 @@ def main():
     dispatcher.add_handler(settings_callback_handler)
     dispatcher.add_handler(migrate_handler)
     dispatcher.add_handler(donate_handler)
-    dispatcher.add_handler(Anshirobot_main_handler)
+    dispatcher.add_handler(avisharobot_main_handler)
     dispatcher.add_error_handler(error_callback)
     dispatcher.add_handler(source_callback_handler)
     LOGGER.info("Using long polling.")
