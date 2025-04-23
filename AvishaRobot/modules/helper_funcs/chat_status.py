@@ -6,7 +6,7 @@ from cachetools import TTLCache
 from telegram import Chat, ChatMember, ParseMode, Update
 from telegram.ext import CallbackContext
 
-from AvishaRobot import (
+from MukeshRobot import (
     DEL_CMDS,
     DEMONS,
     DEV_USERS,
@@ -392,7 +392,7 @@ def connection_status(func):
         else:
             if update.effective_message.chat.type == "private":
                 update.effective_message.reply_text(
-                    "sᴇɴᴅ /connect ɪɴ ᴀ ɢʀᴏᴜᴘ ᴛʜᴀᴛ ʏᴏᴜ ᴀɴᴅ ɪ ʜᴀᴠᴇ ɪɴ ᴄᴏᴍᴍᴏɴ ғɪʀsᴛ."
+                    "Send /connect in a group that you and I have in common first."
                 )
                 return connected_status
 
@@ -402,7 +402,6 @@ def connection_status(func):
 
 
 # Workaround for circular import with connection.py
-from AvishaRobot.modules import connection
+from MukeshRobot.modules import connection
 
 connected = connection.connected
-      
