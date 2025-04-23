@@ -35,7 +35,7 @@ from AvishaRobot import (
     WOLVES,
     dispatcher,
 )
-from MukeshRobot.modules.helper_funcs.chat_status import (
+from AvishaRobot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
